@@ -11,7 +11,7 @@ FTP, SSH, SMB, MYSQL, REDIS(后续有时间继续添加)
 参考Gemfile
 
 # 使用
-![image](./images/lasercrack.png)
+![image](./images/laser.png)
 
 # 爆破方式
 ![image](./images/crack.png)
