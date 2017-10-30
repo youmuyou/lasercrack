@@ -1,4 +1,4 @@
-group :test do
+source "https://rubygems.org" do
     gem 'colorize','~> 0.8.1'
     gem 'net-ssh', '~> 4.1.0'
     gem 'netaddr', '~> 1.5.1'

@@ -7,8 +7,8 @@ Ruby 2.2.2及以后的版本
 # 支持爆破模块
 FTP, SSH, SMB, MYSQL, REDIS(后续有时间继续添加)
 
-# 程序所需模块
-参考Gemfile
+# 安装
+bundle install
 
 # 使用
 ![image](./images/laser.png)
