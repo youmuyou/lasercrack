@@ -36,7 +36,7 @@ class SmbCrack
 
     def hit
         begin
-            sock = TCPSocket.new @ip, @port
+            sock = Socket.tcp(@ip, @port, :connect_timeout => @timeout)
             dispatcher = RubySMB::Dispatcher::Socket.new(sock)
 
             client = RubySMB::Client.new(dispatcher, smb1: true, smb2: true, username: @user, password: @password)
@@ -46,7 +46,8 @@ class SmbCrack
             else
                 return false
             end
-        rescue 
+            client.close
+        rescue
             return false
         end
     end

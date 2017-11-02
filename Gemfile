@@ -9,4 +9,5 @@ source "https://rubygems.org" do
     gem 'ruby-odbc', '~> 0.99998'
     gem 'ruby_smb', '~> 0.0.12'
     gem 'redis', '~>4.0.1'
+    gem 'mongo', '~>2.4.3'
 end

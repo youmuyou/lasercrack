@@ -5,7 +5,7 @@
 Ruby 2.2.2及以后的版本
 
 # 支持爆破模块
-FTP, SSH, SMB, MYSQL, REDIS(后续有时间继续添加)
+ftp, ssh, telnet, smb, mysql, redis, mongo(后续有时间继续添加)
 
 # 安装
 bundle install

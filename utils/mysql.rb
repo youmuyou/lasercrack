@@ -45,6 +45,7 @@ class MysqlCrack
             else
                 return false
             end
+            db.close
         rescue
             return false
         end

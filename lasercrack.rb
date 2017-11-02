@@ -23,13 +23,15 @@ while true do
             elsif choice.split.length != 2
                 puts "[-] Warn! The command format does not match!!!".light_red
             else
-                modset = ["ftp", "ssh", "smb", "mysql", "redis"]
+                modset = ["ftp", "ssh", "telnet", "smb", "mysql", "redis", "mongo"]
                 modhash = Hash[
                                 "ftp" => "21",
-                                "ssh" => "22", 
+                                "ssh" => "22",
+                                "telnet" => "23",
                                 "smb" => "445", 
                                 "mysql" => "3306",
-                                "redis" => "6379"
+                                "redis" => "6379",
+                                "mongo" => "27017",
                                ]
                 opt = choice.split
                 if modset.include?(opt[1])

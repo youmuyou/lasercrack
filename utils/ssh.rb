@@ -39,10 +39,10 @@ class SshCrack
             Net::SSH.start(@ip, @user, :password=>@password, :port=>@port, :auth_methods => [ 'password' ], :number_of_password_prompts => 0, :timeout => @timeout) do |ssh|
                 if ssh
                     return true
-                    ssh.close()
                 else
                     return false
                 end
+                ssh.close
             end
         rescue
             return false

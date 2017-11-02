@@ -38,8 +38,8 @@ class FtpCrack
         ftp = Net::FTP.new
         ftp.read_timeout = @timeout
         ftp.open_timeout = @timeout
-        ftp.connect(@ip, @port)
         begin
+            ftp.connect(@ip, @port)
             ftp.login(@user, @password)
             result = ftp.lastresp
             ftp.close
@@ -54,4 +54,3 @@ class FtpCrack
     end
 
 end
-
